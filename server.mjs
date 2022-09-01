@@ -34,7 +34,7 @@ app.post("/signup", (req, res) => {
         || !body.lastName
         || !body.email
         || !body.password
-    ) {
+    ) { //error json
         res.status(400).send(
             `required fields missing, request example: 
                 {
